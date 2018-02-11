@@ -1,4 +1,10 @@
 /*
+=====================================================================
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+=====================================================================
+
    TOC:
    a. General Styles
    b. Header Styles
@@ -18,36 +24,16 @@
 
 body { background: #0f0f0f; }
 
-.black {
-    color: #0F0F0F;
-}
-
-.add-skill {
-    padding: 2px 10px;
-    margin: 2px 5px;
-    border: 1px solid #8B9798;
-    border-radius: 15px;
-    box-shadow: #6E7881 1px 1px 0px;
-}
-
-.add-skill:hover {
-    background-color: #0D0D0D;
-    color: #FFFFFF;
-}
-
-
-
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
-
 
 header {
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background2.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -89,10 +75,6 @@ header .banner-text h3 span,
 header .banner-text h3 a {
    color: #fff;
 }
-header .banner-text h3 a:hover {
-    color: #00FFFF;
-}
-
 header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
@@ -224,12 +206,10 @@ ul#nav li.current a { color: #F06000; }
    color: #7A7A7A;
 }
 #about .profile-pic {
-    margin-top: 50px;
    position: relative;
-   width: 190px;
-   height: 190px;
-  // border-radius: 100%;
-    border: 3px solid #6E7881;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -301,7 +281,6 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
@@ -320,7 +299,7 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
   	margin-bottom: 60px;
   	background: #ccc;
-  	height: 15px;
+  	height: 42px;
   	border-radius: 3px;
 }
 .bars li em {
@@ -341,43 +320,94 @@ ul#nav li.current a { color: #F06000; }
    padding-right: 24px;
   	background: #313131;
    display: inline-block;
-  	height: 15px;
-   line-height: 15px;
+  	height: 42px;
+   line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
 
 .java {
+  	width: 80%;
+  	-moz-animation: java 2s ease;
+  	-webkit-animation: java 2s ease;
+}
+
+.android {
+  	width: 90%;
+  	-moz-animation: android 2s ease;
+  	-webkit-animation: android 2s ease;
+}
+
+.automation {
   	width: 75%;
+  	-moz-animation: automation 2s ease;
+  	-webkit-animation: automation 2s ease;
+}
+
+.add-skill {
+    padding: 2px 8px;
+    margin: 2px 5px;
+    border: 1px solid #8B9798;
+    border-radius: 15px;
+    box-shadow: #6E7881 1px 1px 0px;
+}
+
+.libraries {
+  	width: 75%;
+  	-moz-animation: libraries 2s ease;
+  	-webkit-animation: libraries 2s ease;
+}
+
+.codetools {
+  	width: 95%;
+  	-moz-animation: codetools 2s ease;
+  	-webkit-animation: codetools 2s ease;
+}
+
+.python {
+  	width: 60%;
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
+}
+
+.spring {
+  	width: 60%;
+  	-moz-animation: spring 2s ease;
+  	-webkit-animation: spring 2s ease;
+}
+
+.hibernate {
+  	width: 70%;
+  	-moz-animation: hibernate 2s ease;
+  	-webkit-animation: hibernate 2s ease;
+}
+
+.photoshop {
+  	width: 60%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
-.cpp {
-  	width: 60%;
+.illustrator {
+  	width: 55%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
-.sql {
-  	width: 70%;
+.wordpress {
+  	width: 50%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.android {
-    width: 80%;
-    -moz-animation: wordpress 2s ease;
-    -webkit-animation: wordpress 2s ease;
-}
 .css {
-  	width: 60%;
+  	width: 90%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html {
-  	width: 65%;
+.html5 {
+  	width: 80%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
-  	width: 65%;
+  	width: 50%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
@@ -449,10 +479,6 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 48px;
    color: #95A3A3;
 }
-
-
-#portfolio .header-col { padding-top: 9px; }
-#portfolio .main-col { padding-right: 10%; }
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }

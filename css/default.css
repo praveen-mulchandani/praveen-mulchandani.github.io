@@ -620,16 +620,6 @@ input[type="checkbox"] { display: inline; }
    min-height: 1px;
    float: left;
 }
-.justify{
-    text-align: justify;
-}
-
-.justify:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
-
 .column.centered, .columns.centered  {
     float: none;
     margin: 0 auto;
